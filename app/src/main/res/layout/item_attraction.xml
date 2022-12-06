@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    tools:context="com.tourism.attraction.ui.HomeScreen">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/ivAvatar"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/effel"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Effel Tower"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This displays a splendid collection of 19th - and 20th -century art(created from 1848 to 1914) in the converted Gare Orsay.This Belle Epoque railway station was built for the universal Exhibithio of 1900"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="3dp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="30dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/heart_fill" />
+
+
+</LinearLayout>

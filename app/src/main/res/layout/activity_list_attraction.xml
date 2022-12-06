@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tourism.attraction.ui.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#6666ff">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="35dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="List of Attraction"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivOut"
+            android:layout_width="35dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:tint="#fff"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="30sp">
+    </ListView>
+
+
+
+    </LinearLayout>
+
+

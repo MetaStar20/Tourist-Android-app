@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.tourism.attraction.ui.Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#6666ff">
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="35sp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:src="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:text="Effel Tower"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginTop="30sp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/effel"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:text="+33(0)140494814"
+        android:clickable="true"
+        android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:text="https://www.musee-orsay.fr/en/"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="This displays a splendid collection of 19th - and 20th -century art(created from 1848 to 1914) in the converted Gare Orsay.This Belle Epoque railway station was built for the universal Exhibithio of 1900" />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="0.1"
+        android:theme="@style/RatingBar"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSubmit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btnstyle"
+        android:text="SUBMIT"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    </LinearLayout>
+
+
